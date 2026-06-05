@@ -5,9 +5,9 @@ import bcrypt from 'bcryptjs';
 import { v4 as uuid } from 'uuid';
 import cors from 'cors';
 
-app.use(cors());
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 
 const dataDir = path.join(process.cwd(), "data");
