@@ -3,6 +3,9 @@ import fs from 'fs';
 import path from 'path';
 import bcrypt from 'bcryptjs';
 import { v4 as uuid } from 'uuid';
+import cors from 'cors';
+
+app.use(cors());
 
 const app = express();
 app.use(express.json());
