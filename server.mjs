@@ -54,7 +54,10 @@ app.post ('/register', (req, res) => {
     users.push(newUser);
     writeUsers(users);
 
-    res.json({ message: "User Registered", id: newUser.id });
+    res.json({ 
+        message: "User Registered", 
+        userId: newUser.id,
+        email: newUser.email});
 });
 
 // Login endpoint
